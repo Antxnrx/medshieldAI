@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MedShield AI</title>
+  <style>
+    body { font-family: Arial; padding: 10px; width: 300px; }
+    #output { margin-top: 10px; }
+    .status { padding: 8px; border-radius: 4px; margin-top: 10px; }
+    .status.active { background-color: #e6f4ea; color: #137333; }
+    .status.error { background-color: #fce8e6; color: #c5221f; }
+    button { 
+      background-color: #1a73e8; 
+      color: white; 
+      border: none; 
+      padding: 8px 16px; 
+      border-radius: 4px; 
+      cursor: pointer; 
+      margin-top: 10px; 
+    }
+    button:hover { background-color: #1765cc; }
+  </style>
+</head>
+<body>
+  <h2>🛡️ MedShield AI</h2>
+  <p>Extension is monitoring this page for health misinformation.</p>
+  <div id="status" class="status active">Backend status: Checking...</div>
+  <div id="output"></div>
+  <button id="scanButton">Scan Current Page</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>
